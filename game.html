@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('/image/pexels-therato-1933239.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .app-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .app-card:hover {
+            transform: scale(1.05);
+        }
+        .app-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .app-card h3 {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .app-card p {
+            font-size: 12px;
+            color: #888;
+            margin: 5px 0;
+        }
+
+        .app-card .price {
+            font-size: 14px;
+            font-weight: bold;
+            color: #007aff;
+        }
+
+        .app-card .price.free {
+            color: #34c759;
+        }
+
+        .app-card .price.owned {
+            color: #888;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        .section-title a {
+            text-decoration: none;
+            color: #007aff;
+            font-size: 16px;
+            float: right;
+        }
+        .navbar {
+    position: relative; 
+    float: right; 
+    margin: 20px; 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+    font-size: 16px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar a:hover {
+    text-decoration: underline;
+    color: #ddd;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="hover:underline">TRANG CHỦ</a>
+        <a href="app.html" class="hover:underline">APP</a>
+        <a href="#" class="hover:underline">GAME</a>
+        <a href="DEMOCODE.html" class="hover:underline">ĐĂNG XUẤT</a>
+    </div>  
+    <div class="container">
+        <div class="app-grid">
+            <div class="app-card">
+                <img src="/image/minerraft.jpg" alt="Minecraft Icon">
+                <a href="21.html"><h3>Minecraft</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/dota.jpg" alt="DOTA 2 Icon">
+                <a href="22.html"><h3>DOTA 2</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/PUPG.jpg" alt="PUPG Icon">
+                <a href="23.html"><h3>PUPG</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/Start.jpg" alt="StarCraft II Icon">
+                <a href="24.html"><h3>StarCraft II</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/king.jpg" alt="Crusader Kings III Icon">
+                <a href="25.html"><h3>Crusader Kings III</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/simulartor.jpg" alt="Microsoft Flight Simulator Icon">
+                <h3>Microsoft Flight Simulator</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/Escape.jpg" alt="Escape from Tarkov Icon">
+                <h3>Escape from Tarkov</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/Counter.jpg" alt="Counter-Strike 2 Icon">
+                <h3>Counter-Strike 2</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/Arma3.jpg" alt="Arma 3 Icon">
+                <h3>Arma 3</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/squad.jpg" alt="Squad Icon">
+                <h3>Squad</h3>
+                <p class="price free">Free</p>
+            </div>
+        </div>
+        <div class="app-grid">
+            <div class="app-card">
+                <img src="/image/fifa.jpg" alt="FIFA Online 4 Icon">
+                <a href="26.html"><h3>FIFA Online 4</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/path.jpeg" alt="Path Of Exile Icon">
+                <a href="27.html"><h3>Path Of Exile</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/wukong.jpg" alt="Black Myth: Wukong Icon">
+                <a href="28.html"><h3>Black Myth: Wukong</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/csgo.jpg" alt="CS:GO Icon">
+                <a href="29.html"><h3>CS:GO</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/valorant.jpg" alt="VALORANT Icon">
+                <a href="30.html"><h3>VALORANT</h3></a>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/LOL.webp" alt="League of Legends Icon">
+                <h3>League of Legends</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/Genshin_Impact.webp" alt="Genshin Impact Icon">
+                <h3>Genshin Impact</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/dargorn.jpg" alt="Dragon City Icon">
+                <h3>Dragon City</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/wordoftank.jpg" alt="World of Tanks Blitz Icon">
+                <h3>World of Tanks Blitz</h3>
+                <p class="price free">Free</p>
+            </div>
+            <div class="app-card">
+                <img src="/image/roblox.jpg" alt="Roblox Icon">
+                <h3>Roblox</h3>
+                <p class="price free">Free</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

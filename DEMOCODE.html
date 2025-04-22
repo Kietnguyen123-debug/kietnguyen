@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng nhập</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen bg-cover bg-center" style="background-image: url('/image/pexels-therato-1933239.jpg');">
+  <div class="absolute top-5 right-10 flex space-x-6 text-white font-semibold text-lg z-10">
+    <a href="#" class="hover:underline">TRANG CHỦ</a>
+    <a href="#" class="hover:underline">APP</a>
+    <a href="#" class="hover:underline">GAME</a>
+    <a href="#" class="hover:underline">ĐĂNG NHẬP</a>
+    <a href="tesr.html" class="hover:underline">ĐĂNG KÝ</a>
+  </div>  
+  <div class="flex items-center justify-center min-h-screen" >
+    <div class="bg-white bg-opacity-90 backdrop-blur-md p-8 rounded-2xl shadow-lg w-full max-w-md" >
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Đăng nhập</h2>
+      <form action="#" method="POST" class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-medium text-black">Email hoặc số điện thoại</label>
+          <input type="text" id="email" name="email" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-black">Mật khẩu</label>
+          <input type="password" id="password" name="password" required class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <a href="index.html" class="block text-center bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">Đăng nhập</a>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
